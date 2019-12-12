@@ -55,6 +55,45 @@ Ubiquiti PowerBeam - Ollaunera begira                                   | ¿Oren
 Ubiquiti PowerBeam AC 400 ISO antena - Urkolamendira begira             | Orendaingo herriarenak   | ?             | Urkolamendiko Supernodo errepikagailura konektatu
 Ubiquiti PowerBeam AC 620 antena - Usurbera begira                      | Orendaingo herriarenak   | ?             | Usurbeko Guifi.Net supernodoarekin konektatu - Talaia-ren Interneteko sarbidea ahalbidetu
 
+### Urkolamendiko Supernodoa
+
+Ikustera joan behar
+
+## OLTra konektatzeko pausuak
+
+Udaletxeko rack-etik etxeraino zuntza baldin badago eta etxe barruan zuntz kajetina jarrita badin badago, honako osagaiak behar dira konexioa burutzeko:
+
+* ONT aparailu bat
+* Bi zuntz kabletxo, bat rack-erako eta bestea etxerako
+
+Osagai horiek edukita, kultur etxeko rack-ean zuntz splitter-etik iterteten den edozein portu etxera doan zuntzera konektatu behar da kabletxo baten bitartez. Etxean berdina egin behar da zuntz kaxetinetik ONTra.
+
+### ONT
+
+ONT aparailuak rack-ean dagoen OLTra konexioa ahalbidetzen du, era desberdinetakoak daude, WiFi-a dutenak, WiFi-rik ez dutenak (kablezko konexioa bakarrik egingo bada), telefono bat konektatzeko aukera ematen dutenak... Huawei etxeko GPON OLT-ekin bateragarria izan behar du ONTak.
+
+Hemen jartzen dira erabiltzeko moduko batzuk, eta beraien ezaugarriak:
+
+ONT modeloa                                                             | Prezioa                  | Non Erosi     | Ezaugarriak
+------------------------------------------------------------------------|--------------------------|---------------|-------------------------------------------------
+Huawei EG8010H                                                          | EUR 28.9                 | Anvimur.com   | Ez du router edota WiFi funtziorik, aparteko router baten beharra du
+Huawei EG8141A5                                                         | EUR 33.9                 | Anvimur.com   | Routerra, 2.4ko WiFi-a, telefonoko toma bat, Gigabit Ethernet bat eta 3 Fast Ethernet ditu
+Huawei EG8145V5                                                         | EUR 46.9                 | Anvimur.com   | Routerra, 2.4/5ko WiFi-a, telefonoko toma bat, 4 Gigabit Ethernet eta USBa du
+
+### Zuntz kabletxoak
+
+Bi muturretan SC/APC erako konektoreak dituzten bi kabletxo beharko dira, horrelakoak:
+
+<img src="media/Zuntza_SCAPC_SCAPC.jpg" alt="drawing" width="500"/>
+
+Hemen eros litezke adibidez:
+
+www.anvimur.com/es/material-fibra-optica/1068-latiguillo-scapc-scapc-1m-o3mm.html
+
+### OLTaren konfigurazio
+
+Hau oraindik idazteko... eta ez dirudi erraza izango denik.
+
 ## Dokumentazioa
 
 Proiektu originalaren dokumentazioa honakoa da:
