@@ -104,6 +104,10 @@ Altena bitartez konektatzeko Orendaingo Guifi.Net sarera honakoak behar dira:
 
 ### Antena 
 
+Antenak kable bakrra izaten dute, datuak eta argi indarra daramatena, Etherneteko sareko kable baten bitartez, Power over Ethernet (PoE) sistema erabiliza. Antenari argi indarra bidaltzeko PoE injektore bat erabiltzen da. Ondoren adierazten den bezala:
+
+<img src="media/Ubiquiti_PoE.jpg" alt="drawing" width="500"/>
+
 Ubiquitiren M5 serieko antena bat behar da, hauek dira aukerak:
 
 Antena modeloa                                                          | Prezioa                  | Non Erosi     | Ezaugarriak
@@ -117,7 +121,7 @@ Aukera egiteko orduan dudak izanezgero ganantzia gehiagoko antena hartu, ganantz
 
 Antena teilatuan edo tokatzen den lekuan muntatzeko gehigarri hauek interesgarriak dira:
 
-Antena modeloa                                                          | Prezioa                  | Non Erosi     | Ezaugarriak
+Gehigarria                                                              | Prezioa                  | Non Erosi     | Ezaugarriak
 ------------------------------------------------------------------------|--------------------------|---------------|-------------------------------------------------
 Ubiquiti NBE-WMK                                                        | EUR 1.84                 | Landashop.com | NanoBeam antenak paretean lotzeko lagungarria
 Ubiquiti Nanobeam Window Mount 16                                       | EUR 5.34                 | Landashop.com | NanoBeam antenak lehio barrutik bentosa batekin jartzeko
@@ -138,7 +142,7 @@ Sistma honek mastil bat jartzea ahalbidetzen du zulorik egin gabe tximinian, fle
 
 Guk bi leku hauetan erosten ditugu herrajeak:
 
-Antena modeloa                                                          | Prezioa                  | Non Erosi              | Ezaugarriak
+Pieza                                                                   | Prezioa                  | Non Erosi              | Ezaugarriak
 ------------------------------------------------------------------------|--------------------------|------------------------|-------------------------------------------------
 OK-43T13                                                                | EUR 13.73                | www.delta.poznan.pl    | Kit osoa, herrajeak eta flejea. Poloniako denda da.
 ABARCON CHIMENEA PARA FLEJE (Bi behar dira muntai baterako)             | EUR 11.98 Bakoitza       | www.electronicabf.com  | Herrajeak bakarrik. Poloniakoa baino sendoagoa da.
@@ -150,9 +154,31 @@ Antena mastil bezala fontaneriako tubo galbanizatua erabiltzen dugu, pulgada eta
 
 Antena instalatu ondoren....
 
+Haseran ordenagailu bat konektatu beharko da PoE injetorearen LAN portura eta konfiguratu. Konfiguratu ondoren Routerrera konektatuko dugu.
+
+Ondorengo bideoan nahiko argi azaltzen da nola konektatu antena nagusira gure antena:
+
+https://www.youtube.com/watch?v=HGjUdu0KZzc
+
 ### Routerra 
 
 Mikrotik markako routerrak dira erabilienak Guifi.Net sarean, merkeak eta onak direlako.
+
+Honako modelo hauek proposatzen dira:
+
+Router modeloa                                                          | Prezioa                  | Non Erosi     | Ezaugarriak
+------------------------------------------------------------------------|--------------------------|---------------|-------------------------------------------------
+Mikrotik hAP Lite classic MKT-RB941-2nD                                 | EUR 18.06                | Landashop.com | Lau Fast Ethernet portu eta 2.4 GHz-eko WiFia
+Mikrotik hAP ac lite MKT-RB952Ui-5ac2nD                                 | EUR 39.64                | Landashop.com | Bost Fast Ethernet portu, 2.4 / 5GHz-eko WiFia, USB portua eta antena zuzenean alimentatzeko aukera PoE irteera bidez
+Mikrotik hAP ac MKT-RB962UiGS-5HacT2HnT                                 | EUR 101.52               | Landashop.com | Bost Gigabit Ethernet portu, 2.4 / 5GHz-eko WiFia, USB portua eta antena zuzenean alimentatzeko aukera PoE irteera bidez
+Mikrotik RB/R2011UiAS-2H-IN                                             | EUR 102.48               | Landashop.com | Bost Gigabit Ethernet portu eta bost Fast Ethernet portu, 2.4 GHz-eko WiFia, USB portua, SFP moduloa erabiltzeko aukera eta antena zuzenean alimentatzeko aukera PoE irteera bidez
+
+#### Routerraren konfigurazioa
+
+Routerraren oinarrizko konfigurazioa egiteko....
+
+IP bat lortu ondoren Guifi.Net-eko web orritik IP hori konfiguratu behar zaio routerrari, Internetera irteteko konexioa dagoen lekurenbatera egin behar da konexio bat, hau Interneteko konexio ornitzailearekin hitzegin beharko da nola egin, edota herriko Internet konexio arduradunarekin. 
+
 
 ## Dokumentazioa
 
