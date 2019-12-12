@@ -25,6 +25,8 @@ Herriko zuntz sarea zuntz monomodo-ko 12 hariko 10 mangeraz osatua dago, arketet
 
 Kultur etxeko rack-eko aparailuen deskripzioa, goitik behera hasita. 
 
+<img src="media/Orendain_rack_1.jpg" alt="drawing" width="500"/>
+
 Aparailua                                                               | Norena                   | Arduraduna    | Zertarako    
 ------------------------------------------------------------------------|--------------------------|---------------|-------------------------------------------------
 Kaskoko etxe bakoitzera zuntz irteerak  (4 rack unitate)                | Orendaingo herriarenak   | ?             | Etxe bakoitzera doan zuntza ordenatuta jartzeko
@@ -34,19 +36,24 @@ Mikrotik RB2011 routerra                                                | Orenda
 Antenen alimentagailua                                                  | Orendaino herriarena     | ?             | Antenei argi indarra ematen die
 Antenetara konexio panela                                               | Orendaino herriarena     | ?             | Antenetara konexioak era txukun batean jartzen ditu
 
-<img src="media/Orendain_rack_1.jpg" alt="drawing" width="500"/>
-
 ### Kultur etxeko antenak
 
-Kultur etxe gainean antenak daude kokatuta.
+Kultur etxe gainean antenak daude kokatuta. Antenak dauden egitura Televes etxearen 360 sistemako mastillekin eginda dago, oinarri bat eta puntera bat erabiliz, punteran tubo bat du sartuta. Bientoekin lotuta dago eta guztira 7 metroko altuera izango du. Antenaren oinarritik 80mm-ko bi tubo jaisten dira rack-a dagoen tokira.
+
+Antenen deskribapena goitik behera.
+
+<img src="media/Orendain_Antenak.jpg" alt="drawing" width="500"/>
 
 Antena                                                                  | Norena                   | Arduraduna    | Zertarako    
 ------------------------------------------------------------------------|--------------------------|---------------|-------------------------------------------------
-Ubiquiti Rocket M5 + AM-5G20-90 antena - Iparraldera begira             | Orendaingo herriarenak   | ?             | Zuntza ez duten etxeei interneta ahalbidetu
+Mikrotik OmniTik antena                                                 | Orendaingo herriarenak   | ?             | Zuntza ez duten etxeei interneta ahalbidetu. Alde guztitara zabaltzen du seinalea (ominidirekzionala da), baina indar gutxirekin
 Ubiquiti Rocket M5 + AM-5G20-90 antena - Hegoaldera begira              | Orendaingo herriarenak   | ?             | Zuntza ez duten etxeei interneta ahalbidetu
-Ubiquiti PowerBeam AC 620 antena - Usurbera begira                      | Orendaingo herriarenak   | ?             | Usurbeko Guifi.Net supernodoarekin konektatu - Talaia-ren Interneteko sarbidea ahalbidetu
+Ubiquiti Rocket M5 + AM-5G20-90 antena - Iparraldera begira             | Orendaingo herriarenak   | ?             | Zuntza ez duten etxeei interneta ahalbidetu
+Ubiquiti NanoBeam                                                       | ?                        | ?             | ?
+Ubiquiti PowerBeam - ¿Baliarrainera begira?                             | ?                        | ?             | ¿Baliarraingo udaletxeko Guifi.Net supernodoarekin konektatu?
+Ubiquiti PowerBeam - Ollaunera begira                                   | ¿Orendaingo herriarenak? | ?             | Ollaun mendiko Guifi.Net supernodoarekin konektatu
 Ubiquiti PowerBeam AC 400 ISO antena - Urkolamendira begira             | Orendaingo herriarenak   | ?             | Urkolamendiko Supernodo errepikagailura konektatu
-
+Ubiquiti PowerBeam AC 620 antena - Usurbera begira                      | Orendaingo herriarenak   | ?             | Usurbeko Guifi.Net supernodoarekin konektatu - Talaia-ren Interneteko sarbidea ahalbidetu
 
 ## Dokumentazioa
 
