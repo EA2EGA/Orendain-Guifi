@@ -94,6 +94,66 @@ www.anvimur.com/es/material-fibra-optica/1068-latiguillo-scapc-scapc-1m-o3mm.htm
 
 Hau oraindik idazteko... eta ez dirudi erraza izango denik.
 
+## Antena bitartez konektatzeko pausuak
+
+Altena bitartez konektatzeko Orendaingo Guifi.Net sarera honakoak behar dira:
+
+* Udaletxeko edota Urkolamendiko antenera bisibilidadea. Ikusi egin behar da garbi-garbi, tartean zuhaitzak baldin badaude ez du balio.
+* Ubiquitiren M5 serieko antena bat. (Zihurtatzeke ea beste markakorenbat konektatu litekeen)
+* Mikrotik router bat.
+
+### Antena 
+
+Ubiquitiren M5 serieko antena bat behar da, hauek dira aukerak:
+
+Antena modeloa                                                          | Prezioa                  | Non Erosi     | Ezaugarriak
+------------------------------------------------------------------------|--------------------------|---------------|-------------------------------------------------
+Ubiquiti PowerBeam PBE-M5-400                                           | EUR 81.34                | Landashop.com | 25 dBi-ko ganantzia, antenatik bi kilometro baino urrunago egonez gero egokia
+Ubiquiti PowerBeam PBE-M5-300                                           | EUR 69.34                | Landashop.com | 22 dBi-ko ganantzia, antenatik bi kilometro baino gertuago egonez gero egokia
+Ubiquiti NanoBeam NBE-M5-16                                             | EUR 59.60                | Landashop.com | 16 dBi-ko ganantzia, antenatik kilometro bat baino gertuago egonez gero egokia
+Ubiquiti Nanostation Loco M5                                            | EUR 59.77                | Landashop.com | 13 dBi-ko ganantzia, antenatik 500 metro baino gertuago egonez gero egokia
+
+Aukera egiteko orduan dudak izanezgero ganantzia gehiagoko antena hartu, ganantzia gehiagok kalterik ez du egiten. Antena handiagoa izango da, eta garestiagoa baina seinale hobea jasoko du. Baita ere esan beharra dago seinale gehiegi ere txarra dela, bera ez jarri 25 dBi-ko ganantzia duen antena bat antena nagusitik oso gertu.
+
+Antena teilatuan edo tokatzen den lekuan muntatzeko gehigarri hauek interesgarriak dira:
+
+Antena modeloa                                                          | Prezioa                  | Non Erosi     | Ezaugarriak
+------------------------------------------------------------------------|--------------------------|---------------|-------------------------------------------------
+Ubiquiti NBE-WMK                                                        | EUR 1.84                 | Landashop.com | NanoBeam antenak paretean lotzeko lagungarria
+Ubiquiti Nanobeam Window Mount 16                                       | EUR 5.34                 | Landashop.com | NanoBeam antenak lehio barrutik bentosa batekin jartzeko
+
+Antenak instalatzeko orduan oso garrantzitsua da antenara doan kablea ona izate, kanpoko eguraldia jasango duena eta apantailatua (FTP) izango dena. Konektoreak ere apantailatuak izan behar dute. 5e kategoriako kablea nahikoa da. 
+
+Talaikide-n Ubiquitiren kable eta konektoreak erabiltzen ditugu bezeroen instalakuntzetarako, zehazki Ubiquiti Tough Cable PRO kablea eta Ubiquiti Tough Connector RJ45 konektoreak.
+
+Oso garrantzitsua da tierrako kablea ondo lotzea konektorean tximistetatik babes egokia izateko, hemen muntaia bideo bat:
+
+https://www.youtube.com/watch?v=xJcttdSkMTU
+
+Antena mastila etxean baldin bada, bertara lotu liteke antena, bestela badaude tximiniari lotzeko abarkoi moduko herraje batzuk, ondorengo argazkitan ikusten diren erakoak:
+
+<img src="media/Tximinia_Flejea.jpg" alt="drawing" height="350"/> <img src="media/Tximinia_Flejea_2.jpg" alt="drawing" height="350"/>
+
+Sistma honek mastil bat jartzea ahalbidetzen du zulorik egin gabe tximinian, fleje galbanizatu batek inguratzen duelarik tximinia eta herrajeak duen karraka baten bitartez tentsatzen dena.
+
+Guk bi leku hauetan erosten ditugu herrajeak:
+
+Antena modeloa                                                          | Prezioa                  | Non Erosi              | Ezaugarriak
+------------------------------------------------------------------------|--------------------------|------------------------|-------------------------------------------------
+OK-43T13                                                                | EUR 13.73                | www.delta.poznan.pl    | Kit osoa, herrajeak eta flejea. Poloniako denda da.
+ABARCON CHIMENEA PARA FLEJE (Bi behar dira muntai baterako)             | EUR 11.98 Bakoitza       | www.electronicabf.com  | Herrajeak bakarrik. Poloniakoa baino sendoagoa da.
+CINTA FLEJE ACERO GALVANIZADO rollo 5 m 0,6x40 mm 	                    | EUR 13.73                | www.electronicabf.com  | Aurreko herrajeentzako flejea.
+
+Antena mastil bezala fontaneriako tubo galbanizatua erabiltzen dugu, pulgada eta laurdenekoa. Oso tubo sendoa da eta galbanizatua gainera.
+
+#### Antenaren konfigurazioa
+
+Antena instalatu ondoren....
+
+### Routerra 
+
+Mikrotik markako routerrak dira erabilienak Guifi.Net sarean, merkeak eta onak direlako.
+
 ## Dokumentazioa
 
 Proiektu originalaren dokumentazioa honakoa da:
