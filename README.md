@@ -53,7 +53,7 @@ Ubiquiti NanoBeam                                                       | ?     
 Ubiquiti PowerBeam - ¿Baliarrainera begira?                             | ?                        | ?             | ¿Baliarraingo udaletxeko Guifi.Net supernodoarekin konektatu?
 Ubiquiti PowerBeam - Ollaunera begira                                   | ¿Orendaingo herriarenak? | ?             | Ollaun mendiko Guifi.Net supernodoarekin konektatu
 Ubiquiti PowerBeam AC 400 ISO antena - Urkolamendira begira             | Orendaingo herriarenak   | ?             | Urkolamendiko Supernodo errepikagailura konektatu
-Ubiquiti PowerBeam AC 620 antena - Usurbera begira                      | Orendaingo herriarenak   | ?             | Usurbeko Guifi.Net supernodoarekin konektatu - Talaia-ren Interneteko sarbidea ahalbidetu
+Ubiquiti PowerBeam AC 620 ISO antena - Usurbera begira                  | Orendaingo herriarenak   | ?             | Usurbeko Guifi.Net supernodoarekin konektatu - Talaia-ren Interneteko sarbidea ahalbidetu
 
 ### Urkolamendiko Supernodoa
 
@@ -162,7 +162,7 @@ https://www.youtube.com/watch?v=HGjUdu0KZzc
 
 ### Routerra 
 
-Mikrotik markako routerrak dira erabilienak Guifi.Net sarean, merkeak eta onak direlako.
+Mikrotik markako routerrak dira erabilienak Guifi.Net sarean, merkeak eta onak direlako. Gainera enrutamendu eta tunelizazio aukera ikaragarriak eskaintzen dituzte, eta antena bidezko sarean beharrezkoak dira gaitasun hauek
 
 Honako modelo hauek proposatzen dira:
 
@@ -178,6 +178,17 @@ Mikrotik RB/R2011UiAS-2H-IN                                             | EUR 10
 Routerraren oinarrizko konfigurazioa egiteko....
 
 IP bat lortu ondoren Guifi.Net-eko web orritik IP hori konfiguratu behar zaio routerrari, Internetera irteteko konexioa dagoen lekurenbatera egin behar da konexio bat, hau Interneteko konexio ornitzailearekin hitzegin beharko da nola egin, edota herriko Internet konexio arduradunarekin. 
+
+## Zuntz optiko bitartez konektatzeko pausuak
+
+Egun, Orendaineko kaskoan zuntz optikoa botata dago ia etxe guztietaraino kultur etxeko rack-etik. Bi eratara eman liteke interneta zuntz optiko sare honen gainean, GPON sistemaren bitartez eta switch baten bitartez. Biak egiteko aukera dago, GPON bitartez egiteko Huawei OLT aparailua erabili behar delarik eta bestela 24 portuko SFP switch-a. Hemen bigarren aukera explikatuko da.
+
+Switch-a erabiliz zuntz optiko bitartez konektatzeko Orendaingo Guifi.Net sarera honakoak behar dira:
+
+* SFP-Ethernet medio konbertidore bat edota SFP modulua duen router bat.
+* SFP-tik zuntz monomodo bidirezionaleko adaptadore joku bat (bat alde bakoitzerako).
+* Router bat (SFP-ko sarrera badu, medio konbertsorea ez da behar).
+* Bi zuntz optiko monomodoko kabletxo, alde batena LC-SCP konektorea eta bastean SC-APC konektorea dutenak.
 
 
 ## Dokumentazioa
