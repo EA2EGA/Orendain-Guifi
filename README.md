@@ -59,7 +59,7 @@ Ubiquiti PowerBeam AC 620 ISO antena - Usurbera begira                  | Orenda
 
 Ikustera joan behar
 
-## OLTra konektatzeko pausuak
+## Zuntz optiko bitartez OLTra konektatzeko pausuak
 
 Udaletxeko rack-etik etxeraino zuntza baldin badago eta etxe barruan zuntz kajetina jarrita badin badago, honako osagaiak behar dira konexioa burutzeko:
 
@@ -92,7 +92,63 @@ www.anvimur.com/es/material-fibra-optica/1068-latiguillo-scapc-scapc-1m-o3mm.htm
 
 ### OLTaren konfigurazio
 
-Hau oraindik idazteko... eta ez dirudi erraza izango denik.
+Hau oraindik idazteko... eta ez dirudi erraza izango denik. Oraingoz OLTa erabiltzen duen operatzaile bakarra Izarkom da.
+
+## Zuntz optiko bitartez Switch-era konektatzeko pausuak
+
+Egun, Orendaineko kaskoan zuntz optikoa botata dago ia etxe guztietaraino kultur etxeko rack-etik. Bi eratara eman liteke interneta zuntz optiko sare honen gainean, GPON sistemaren bitartez eta switch baten bitartez. Biak egiteko aukera dago, GPON bitartez egiteko Huawei OLT aparailua erabili behar delarik eta bestela 24 portuko SFP switch-a. Hemen bigarren aukera explikatuko da.
+
+Switch-a erabiliz zuntz optiko bitartez konektatzeko Orendaingo Guifi.Net sarera honakoak behar dira:
+
+* SFP-Ethernet medio konbertsorea bat edota SFP modulua duen router bat.
+* SFP-tik zuntz monomodo bidirezionaleko adaptadore joku bat (bat alde bakoitzerako).
+* Router bat (SFP-ko sarrera badu, medio konbertsorea ez da behar).
+* Bi zuntz optiko monomodoko kabletxo, alde batena LC-SCP konektorea eta bastean SC-APC konektorea dutenak.
+
+### SFP-Ethernet konbertsorea
+
+Edozein markako SFP-Ethernet konbertsore erabil liteke. Mekartuko merkeenak honakoak dira:
+
+Konbertsore modeloa                                                     | Prezioa                  | Non Erosi     
+------------------------------------------------------------------------|--------------------------|---------------
+FS MMC-GASFP                                                            | EUR 23.00                | www.fs.com    
+Tp-Link MC220L                                                          | EUR 16.92                | maswifi.com    
+
+### SFP-BiDi konbertsoreak
+
+SFP modulutik zuntz optikorako konbertsoreak honakoak dira. Zuntzaren alde bakoitzean parejako bat jarri behar da eta bestean bestea. Beraz konexio bat egiteko bakoitzetik bat erosi beharra dago. Beste markarenbateko konbertsoreak ere erosi litezke, baina topatu diren merkeenak hauek dira.
+
+SFP BiDi konbertsorea                                                   | Prezioa                  | Non Erosi     
+------------------------------------------------------------------------|--------------------------|---------------
+FS GLC-BX-U                                                             | EUR 8.10                 | www.fs.com    
+FS GLC-BX-D                                                             | EUR 11.00                | www.fs.com  
+
+### Routerra
+
+Mikrotik markako routerrak dira erabilienak Guifi.Net sarean, merkeak eta onak direlako. Gainera enrutamendu eta tunelizazio aukera ikaragarriak eskaintzen dituzte, eta antena bidezko sarean beharrezkoak dira gaitasun hauek
+
+Honako modelo hauek proposatzen dira:
+
+Router modeloa                                                          | Prezioa                  | Non Erosi     | Ezaugarriak
+------------------------------------------------------------------------|--------------------------|---------------|-------------------------------------------------
+Mikrotik hAP Lite classic MKT-RB941-2nD                                 | EUR 18.06                | Landashop.com | Lau Fast Ethernet portu eta 2.4 GHz-eko WiFia
+Mikrotik hAP ac lite MKT-RB952Ui-5ac2nD                                 | EUR 39.64                | Landashop.com | Bost Fast Ethernet portu, 2.4 / 5GHz-eko WiFia, USB portua eta antena zuzenean alimentatzeko aukera PoE irteera bidez
+Mikrotik hAP ac MKT-RB962UiGS-5HacT2HnT                                 | EUR 101.52               | Landashop.com | Bost Gigabit Ethernet portu, 2.4 / 5GHz-eko WiFia, USB portua eta antena zuzenean alimentatzeko aukera PoE irteera bidez
+Mikrotik RB/R2011UiAS-2H-IN                                             | EUR 102.48               | Landashop.com | Bost Gigabit Ethernet portu eta bost Fast Ethernet portu, 2.4 GHz-eko WiFia, USB portua, SFP moduloa erabiltzeko aukera eta antena zuzenean alimentatzeko aukera PoE irteera bidez
+
+### Zuntz optiko kabletxoak
+
+LC/UPC - SC/APC motako bi zuntz optiko kabletxo behar dira. Era honetakoak:
+
+<img src="media/latiguillo-lcupc-scapc-3m-o2mm.jpg" alt="drawing" width="500"/>
+
+Kable bat rack-ean SFP switcheko BiDi konbertsoretik etxera doan zuntzera konektatu beharko da, eta bestea etxean zuntz optikoko rosetatik SFP-Ethernet konbertsoreko BiDi modulora.
+
+Non erosi:
+
+LC/UPC - SC/APC Kablea                                                  | Prezioa                  | Non Erosi     
+------------------------------------------------------------------------|--------------------------|---------------
+LC/UPC - SC/APC Kablea                                                  | EUR 1.40                 | https://www.anvimur.com/es/material-fibra-optica/416-latiguillo-lcupc-scapc-3m-o2mm.html
 
 ## Antena bitartez konektatzeko pausuak
 
@@ -179,19 +235,6 @@ Routerraren oinarrizko konfigurazioa egiteko....
 
 IP bat lortu ondoren Guifi.Net-eko web orritik IP hori konfiguratu behar zaio routerrari, Internetera irteteko konexioa dagoen lekurenbatera egin behar da konexio bat, hau Interneteko konexio ornitzailearekin hitzegin beharko da nola egin, edota herriko Internet konexio arduradunarekin. 
 
-## Zuntz optiko bitartez konektatzeko pausuak
-
-Egun, Orendaineko kaskoan zuntz optikoa botata dago ia etxe guztietaraino kultur etxeko rack-etik. Bi eratara eman liteke interneta zuntz optiko sare honen gainean, GPON sistemaren bitartez eta switch baten bitartez. Biak egiteko aukera dago, GPON bitartez egiteko Huawei OLT aparailua erabili behar delarik eta bestela 24 portuko SFP switch-a. Hemen bigarren aukera explikatuko da.
-
-Switch-a erabiliz zuntz optiko bitartez konektatzeko Orendaingo Guifi.Net sarera honakoak behar dira:
-
-* SFP-Ethernet medio konbertidore bat edota SFP modulua duen router bat.
-* SFP-tik zuntz monomodo bidirezionaleko adaptadore joku bat (bat alde bakoitzerako).
-* Router bat (SFP-ko sarrera badu, medio konbertsorea ez da behar).
-* Bi zuntz optiko monomodoko kabletxo, alde batena LC-SCP konektorea eta bastean SC-APC konektorea dutenak.
-
-
 ## Dokumentazioa
 
 Proiektu originalaren dokumentazioa honakoa da:
-
