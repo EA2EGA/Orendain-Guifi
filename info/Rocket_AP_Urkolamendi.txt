@@ -1,0 +1,24 @@
+XW.v5.6.2# discover
+Hardware Address  IP address            Name
+80:2A:A8:BA:8B:A2 10.69.16.83     NanoBeam M5 16 'NanoBeam M5 16'
+80:2A:A8:A6:3C:77 192.168.1.31    NanoBeam M5 16 'NanoBeam M5 16'
+80:2A:A8:A6:3B:52 192.168.1.20    NanoBeam M5 16 'OkaizkarroBehekoa'
+80:2A:A8:B8:28:09 10.69.16.94     Rocket M5 'ORENUrkolamendiAP0'
+Total: 4 devices.
+
+XW.v5.6.2# wstalist |grep -e \"name\" -e \"mac\" -e \"signal\"
+                "mac": "80:2A:A8:A6:3C:77",
+                "name": "NanoBeam M5 16",
+                "signal": -65,
+                        "signal": -61,
+                        "signal": -61,
+                "mac": "80:2A:A8:A6:3B:52",
+                "name": "OkaizkarroBehe",
+                "signal": -62,
+                        "signal": -58,
+                        "signal": -58,
+                "mac": "80:2A:A8:BA:8B:A2",
+                "name": "NanoBeam M5 16",
+                "signal": -75,
+                        "signal": -65,
+                        "signal": -66,

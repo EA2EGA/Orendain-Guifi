@@ -1,0 +1,143 @@
+[talaikide@ORENKulturetxea-RB2011] /ip neighbor> print
+ # INTERFACE ADDRESS                                                           MAC-ADDRESS       IDENTITY   VERSION    BOARD
+ 0 wlan1     172.23.0.250                                                      D4:CA:6D:8C:7B:D2 BALIUda... 6.46 (s... RB OmniTIK UPA-5HnD
+ 1 wlan1     172.23.0.251                                                      DC:9F:DB:E0:44:46 ORENKul... XM.v6.1.4
+ 2 wlan1     172.23.0.252                                                      DC:9F:DB:86:71:35 BALIUda... XM.v6.0.7
+ 3 wlan2     172.23.1.2                                                        D4:CA:6D:5A:03:60 TOLOOll... 6.44.3 ... RB493G
+ 4 wlan2     172.23.1.3                                                        DC:9F:DB:84:9E:4E ORENUda... XM.v6.0.7
+ 5 wlan2     172.23.1.4                                                        DC:9F:DB:2E:92:AB TOLOOll... XM.v6.0.7
+ 6 wlan3     172.23.1.34                                                       74:4D:28:87:DF:6B ORDIGoi... 6.46 (s... RB4011iGS+
+ 7 wlan3     172.23.1.39                                                       74:4D:28:87:DF:85 BEAUsur... 6.46 (s... RB4011iGS+
+ 8 wlan4     172.23.4.97                                                       6C:3B:6B:7E:10:E3 ORENUrk... 6.36.1 ... RB750Gr3
+ 9 wlan4     172.23.4.99                                                       80:2A:A8:7E:68:75 ORENUrk... XW.v6.0...
+10 wlan4     172.23.4.100                                                      80:2A:A8:06:10:3F ORENKul... XW.v6.0...
+11 ether9    10.69.16.97                                                       C4:AD:34:0A:AC:DE ORENKul... 6.46.1 ... RB3011UiAS
+12 ether9    10.69.16.97                                                       C4:AD:34:0A:AC:DF ORENKul... 6.46.1 ... RB3011UiAS
+13 ether10   172.23.6.177                                                      74:4D:28:C4:F6:63 ORENKul... 6.44.4 ... RB760iGS
+14 eoip-T...                                                                   00:00:5E:80:00:12 Orendain12 6.41.2 ... RB931-2nD
+   bridge...
+15 eoip-T... 172.19.2.1                                                        00:00:5E:80:11:01 Talaia     6.44.6 ...
+   bridge...
+16 eoip-T... 172.19.2.1                                                        00:00:5E:90:00:00 Talaia     6.44.6 ... CCR1009-8G-1S
+   bridge...
+17 eoip-T... 192.168.0.67                                                      E4:8D:8C:3E:BD:22 Talaia     6.44.6 ... CCR1009-8G-1S
+   bridge...
+18 eoip-T... 192.168.100.203                                                   02:9B:DD:80:79:22 ORDIGoi... 6.46 (s... RB4011iGS+
+   bridge...
+19 wlan6     10.69.16.37                                                       80:2A:A8:A6:3C:09 Orendain9  6.44.1 ... RB952Ui-5ac2nD
+   Bridge...
+20 wlan6     10.69.16.41                                                       18:E8:29:8E:64:A5 TOLOUrk... 6.42.12... RB941-2nD
+   Bridge...
+21 wlan6     10.69.16.60                                                       80:2A:A8:B8:29:52 ORENKul... XW.v6.1.2
+   Bridge...
+22 wlan6     10.69.16.62                                                       64:D1:54:64:4A:0A ORENKul... 6.41 (s... RBOmniTIKPG-5HacD
+   Bridge...
+23 wlan6     192.168.1.18                                                      80:2A:A8:A6:3D:E5 Abali E... XW.v6.1.2  RB952Ui-5ac2nD
+   Bridge...
+24 wlan6     192.168.1.21                                                      80:2A:A8:A6:3C:05 OskarbiBIS XW.v6.1.2
+   Bridge...
+25 wlan6     192.168.1.30                                                      04:18:D6:4C:FB:1F ORENElk... XW.v6.1.2  RB750UPr2
+   Bridge...
+
+
+[talaikide@ORENKulturetxea-RB2011] /ip neighbor> print detail
+ 0 interface=wlan1 address=172.23.0.250 address4=172.23.0.250 mac-address=D4:CA:6D:8C:7B:D2 identity="BALIUdaletxea-OMNITIK" platform="MikroTik"
+   version="6.46 (stable)" unpack=none age=47s uptime=1w1d6h47m22s software-id="QQXN-ZWH9" board="RB OmniTIK UPA-5HnD" ipv6=no
+   interface-name="wlan2" system-caps="" system-caps-enabled=""
+
+ 1 interface=wlan1 address=172.23.0.251 address4=172.23.0.251 mac-address=DC:9F:DB:E0:44:46 identity="ORENKulturetxea-NBR-BALUdaletxea"
+   platform="NanoBridge M5" version="XM.v6.1.4" unpack=none age=40s interface-name="br0" system-caps="" system-caps-enabled=""
+
+ 2 interface=wlan1 address=172.23.0.252 address4=172.23.0.252 mac-address=DC:9F:DB:86:71:35 identity="BALIUdaletxea-ORENKulturetxea"
+   platform="NanoBridge M5" version="XM.v6.0.7" unpack=none age=6s interface-name="br0" system-caps="" system-caps-enabled=""
+
+ 3 interface=wlan2 address=172.23.1.2 address4=172.23.1.2 mac-address=D4:CA:6D:5A:03:60 identity="TOLOOllaun-1100" platform="MikroTik"
+   version="6.44.3 (stable)" unpack=none age=37s uptime=20w2d11h11m30s software-id="AVEF-A8DK" board="RB493G" ipv6=no interface-name="wlan5"
+   system-caps="" system-caps-enabled=""
+
+ 4 interface=wlan2 address=172.23.1.3 address4=172.23.1.3 mac-address=DC:9F:DB:84:9E:4E identity="ORENUdaletxea-TOLOOllaun" platform="NanoBridge M5"
+   version="XM.v6.0.7" unpack=none age=3s interface-name="br0" system-caps="" system-caps-enabled=""
+
+ 5 interface=wlan2 address=172.23.1.4 address4=172.23.1.4 mac-address=DC:9F:DB:2E:92:AB identity="TOLOOllaun-PBM-ORENUdaletxea"
+   platform="NanoBridge M5" version="XM.v6.0.7" unpack=none age=1m interface-name="br0" system-caps="" system-caps-enabled=""
+
+ 6 interface=wlan3 address=172.23.1.34 address4=172.23.1.34 mac-address=74:4D:28:87:DF:6B identity="ORDIGoieki-Router" platform="MikroTik"
+   version="6.46 (stable)" unpack=none age=14s uptime=1w5d22h42m9s software-id="5HZT-1A3Z" board="RB4011iGS+" ipv6=no interface-name="wlan1"
+   system-caps="" system-caps-enabled=""
+
+ 7 interface=wlan3 address=172.23.1.39 address4=172.23.1.39 mac-address=74:4D:28:87:DF:85 identity="BEAUsurbeRTR" platform="MikroTik"
+   version="6.46 (stable)" unpack=none age=36s uptime=2w1d1h12m6s software-id="MFXL-DHGX" board="RB4011iGS+" ipv6=no
+   interface-name="bridge-TEMP/ether2" system-caps="" system-caps-enabled=""
+
+ 8 interface=wlan4 address=172.23.4.97 address4=172.23.4.97 mac-address=6C:3B:6B:7E:10:E3 identity="ORENUrkolamendi-RB750" platform="MikroTik"
+   version="6.36.1 (stable)" unpack=none age=49s uptime=1d16h42m11s software-id="C3DK-5KK8" board="RB750Gr3" ipv6=no interface-name="wlan1"
+   system-caps="" system-caps-enabled=""
+
+ 9 interface=wlan4 address=172.23.4.99 address4=172.23.4.99 mac-address=80:2A:A8:7E:68:75 identity="ORENUrkolamendiKulturetxea"
+   platform="PowerBeam M5 300" version="XW.v6.0.7-cs.31601.170908.1232" unpack=none age=21s interface-name="br0" system-caps=""
+   system-caps-enabled=""
+
+10 interface=wlan4 address=172.23.4.100 address4=172.23.4.100 mac-address=80:2A:A8:06:10:3F identity="ORENKulturetxeaUrkolamendi"
+   platform="PowerBeam M5 400" version="XW.v6.0.7-cs.31601.170908.1232" unpack=none age=6s interface-name="br0" system-caps=""
+   system-caps-enabled=""
+
+11 interface=ether9 address=10.69.16.97 address4=10.69.16.97 mac-address=C4:AD:34:0A:AC:DE identity="ORENKulturetxea-RTR-Izarkom" platform="MikroTik"
+   version="6.46.1 (stable)" unpack=none age=21s uptime=3d1h40m14s software-id="0E9W-9PPD" board="RB3011UiAS" ipv6=no
+   interface-name="GuifiNet_LAN/ether2" system-caps="" system-caps-enabled=""
+
+12 interface=ether9 address=10.69.16.97 address4=10.69.16.97 mac-address=C4:AD:34:0A:AC:DF identity="ORENKulturetxea-RTR-Izarkom" platform="MikroTik"
+   version="6.46.1 (stable)" unpack=none age=21s uptime=18s software-id="0E9W-9PPD" board="RB3011UiAS" interface-name="GuifiNet_LAN/ether2"
+   system-description="MikroTik RouterOS 6.46.1 (stable) RB3011UiAS" system-caps=bridge,router system-caps-enabled=bridge,router
+
+13 interface=ether10 address=172.23.6.177 address4=172.23.6.177 mac-address=74:4D:28:C4:F6:63 identity="ORENKulturetxea-hEX-S-Talaikide"
+   platform="MikroTik" version="6.44.4 (stable)" unpack=none age=22s uptime=3w4d5h30m33s software-id="NSDG-P9H0" board="RB760iGS" ipv6=no
+   interface-name="ether3" system-description="MikroTik RouterOS 6.44.4 (stable) RB760iGS" system-caps=bridge,router
+   system-caps-enabled=bridge,router
+
+14 interface=eoip-Talaia_Fibra,bridge_Fibra_Talaia mac-address=00:00:5E:80:00:12 identity="Orendain12" platform="MikroTik" version="6.41.2 (stable)"
+   unpack=none age=56s uptime=1d16h42m17s software-id="ERV8-DH5V" board="RB931-2nD" ipv6=no interface-name="eoip-tunnel1" system-caps=""
+   system-caps-enabled=""
+
+15 interface=eoip-Talaia_Fibra,bridge_Fibra_Talaia address=172.19.2.1 address4=172.19.2.1 mac-address=00:00:5E:80:11:01 identity="Talaia"
+   platform="MikroTik" version="6.44.6 (long-term)" unpack=none age=8s interface-name="bridge_Guifi/eoip-Orendain_Fibra"
+   system-description="MikroTik RouterOS 6.44.6 (long-term) CCR1009-8G-1S" system-caps=bridge,router system-caps-enabled=bridge,router
+
+16 interface=eoip-Talaia_Fibra,bridge_Fibra_Talaia address=172.19.2.1 address4=172.19.2.1 mac-address=00:00:5E:90:00:00 identity="Talaia"
+   platform="MikroTik" version="6.44.6 (long-term)" unpack=none age=8s uptime=3w4h36m25s software-id="EDBZ-NRL0" board="CCR1009-8G-1S" ipv6=no
+   interface-name="bridge_Guifi/eoip-Orendain_Fibra" system-caps="" system-caps-enabled=""
+
+17 interface=eoip-Talaia_LAN,bridge_EoIP-Talaia_LAN address=192.168.0.67 address4=192.168.0.67 mac-address=E4:8D:8C:3E:BD:22 identity="Talaia"
+   platform="MikroTik" version="6.44.6 (long-term)" unpack=none age=8s uptime=3w4h36m25s software-id="EDBZ-NRL0" board="CCR1009-8G-1S" ipv6=no
+   interface-name="ether1_LAN" system-caps="" system-caps-enabled=""
+
+18 interface=eoip-Talaia_LAN,bridge_EoIP-Talaia_LAN address=192.168.100.203 address4=192.168.100.203 mac-address=02:9B:DD:80:79:22
+   identity="ORDIGoieki-Router" platform="MikroTik" version="6.46 (stable)" unpack=none age=31s uptime=1w5d22h42m9s software-id="5HZT-1A3Z"
+   board="RB4011iGS+" interface-name="Bridge_EoIP/eoip-ORENKulturetxea" system-description="MikroTik RouterOS 6.46 (stable) RB4011iGS+"
+   system-caps=bridge,router system-caps-enabled=bridge,router
+
+19 interface=wlan6,Bridge_Erabiltzaileak address=10.69.16.37 address4=10.69.16.37 mac-address=80:2A:A8:A6:3C:09 identity="Orendain9"
+   platform="MikroTik" version="6.44.1 (stable)" unpack=none age=52s uptime=19w2d10h35m6s software-id="WTA6-ZLRJ" board="RB952Ui-5ac2nD" ipv6=no
+   interface-name="ether1" system-caps="" system-caps-enabled=""
+
+20 interface=wlan6,Bridge_Erabiltzaileak address=10.69.16.38 address4=10.69.16.38 mac-address=80:2A:A8:A6:3D:E5 identity="Orendain11"
+   platform="MikroTik" version="6.44.5 (long-term)" unpack=none age=26s uptime=1d6h51m18s software-id="XT35-FE4U" board="RB952Ui-5ac2nD" ipv6=no
+   interface-name="ether1" system-caps="" system-caps-enabled=""
+
+21 interface=wlan6,Bridge_Erabiltzaileak address=10.69.16.41 address4=10.69.16.41 mac-address=18:E8:29:8E:64:A5 identity="TOLOUrkizuOndo-Router"
+   platform="MikroTik" version="6.42.12 (long-term)" unpack=none age=7s uptime=2d2h48m31s software-id="TJSK-0E79" board="RB941-2nD" ipv6=no
+   interface-name="ether4" system-caps="" system-caps-enabled=""
+
+22 interface=wlan6,Bridge_Erabiltzaileak address=10.69.16.60 address4=10.69.16.60 mac-address=80:2A:A8:B8:29:52 identity="ORENKulturetxeaAP2"
+   platform="Rocket M5" version="XW.v6.1.2" unpack=none age=31s interface-name="br0" system-caps="" system-caps-enabled=""
+
+23 interface=wlan6,Bridge_Erabiltzaileak address=10.69.16.62 address4=10.69.16.62 mac-address=64:D1:54:64:4A:0A identity="ORENKulturetxea-OMNITIK"
+   platform="MikroTik" version="6.41 (stable)" unpack=none age=3s uptime=1w2d8h26m14s software-id="9YVC-RTCB" board="RBOmniTIKPG-5HacD" ipv6=no
+   interface-name="Lan" system-description="MikroTik RouterOS 6.41 (stable) RBOmniTIKPG-5HacD" system-caps=bridge,wlan-ap,router
+   system-caps-enabled=bridge,wlan-ap,router
+
+24 interface=wlan6,Bridge_Erabiltzaileak address=192.168.1.20 address4=192.168.1.20 mac-address=80:2A:A8:A6:3C:05 identity="Oskarbi"
+   platform="NanoBeam M5 16" version="XW.v6.1.2" unpack=none age=21s interface-name="br0" system-caps="" system-caps-enabled=""
+
+25 interface=wlan6,Bridge_Erabiltzaileak address=192.168.1.30 address4=192.168.1.30 mac-address=04:18:D6:4C:FB:1F identity="ORENElkartea"
+   platform="NanoBeam M5 16" version="XW.v6.1.2" unpack=none age=39s uptime=1d16h42m14s software-id="J2TI-1DNU" board="RB750UPr2" ipv6=no
+   interface-name="br0" system-caps="" system-caps-enabled=""

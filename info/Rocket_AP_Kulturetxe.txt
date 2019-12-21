@@ -1,0 +1,27 @@
+XW.v6.1.2# discover
+Hardware Address  IP address            Name
+80:2A:A8:30:C2:0B 192.168.1.21    NanoStation M5 'OskarbiBIS'
+80:2A:A8:B8:29:52 10.69.16.60     Rocket M5 'ORENKulturetxeaAP2'
+18:E8:29:8E:64:A5 192.168.99.20   PowerBeam M5 400 'TOLOUrkizuOndo-PowerBeam'
+80:2A:A8:A6:3C:05 192.168.1.20    NanoBeam M5 16 'Oskarbi'
+80:2A:A8:A6:3C:09 192.168.1.19    NanoBeam M5 16 'Olaso'
+80:2A:A8:A6:3D:E5 192.168.1.18    NanoBeam M5 16 'Abali Etxeberri'
+04:18:D6:4C:FB:1F 192.168.1.30    NanoBeam M5 16 'ORENElkartea'
+Total: 7 devices.
+
+XW.v6.1.2# wstalist |grep -e \"name\" -e \"mac\" -e \"signal\"
+                "mac": "80:2A:A8:A6:3C:09",
+                "name": "Olaso",
+                "signal": -65,
+                        "signal": -59,
+                        "signal": -59,
+                "mac": "04:18:D6:4C:FB:1F",
+                "name": "ORENElkartea",
+                "signal": -65,
+                        "signal": -52,
+                        "signal": -52,
+                "mac": "80:2A:A8:A6:3C:05",
+                "name": "Oskarbi",
+                "signal": -67,
+                        "signal": -52,
+                        "signal": -52,

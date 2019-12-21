@@ -1,0 +1,124 @@
+# dec/21/2019 02:06:06 by RouterOS 6.46
+# software id = 8NNP-SD8Z
+#
+# model = 2011UiAS
+# serial number = 763107D241FE
+/interface bridge
+add name=Bridge_Erabiltzaileak
+add fast-forward=no mtu=1500 name=Lan protocol-mode=none
+add fast-forward=no name=bridge_EoIP-Talaia_LAN
+add admin-mac=00:00:5E:91:00:00 auto-mac=no fast-forward=no name=bridge_Fibra_Talaia
+/interface ethernet
+set [ find default-name=ether1 ] comment=admin speed=100Mbps
+set [ find default-name=ether8 ] advertise=10M-half,10M-full,100M-half,100M-full,1000M-half,1000M-full
+set [ find default-name=ether9 ] advertise=10M-half,10M-full,100M-half,100M-full,1000M-half,1000M-full comment="Izarkom RTR" speed=10Mbps
+set [ find default-name=ether10 ] advertise=10M-half,10M-full,100M-half,100M-full,1000M-half,1000M-full comment="Talaikideren Routerrera"
+set [ find default-name=ether2 ] comment="ether2 ;; BALIUdaletxea" name=wlan1 speed=100Mbps
+set [ find default-name=ether3 ] comment="ether3 ;; TOLOOllaun" name=wlan2 speed=100Mbps
+set [ find default-name=ether4 ] comment="ether4 ;; BEASUsurbe" name=wlan3 speed=100Mbps
+set [ find default-name=ether5 ] comment="ether5 ;; Urkolamendi" name=wlan4 speed=100Mbps
+set [ find default-name=ether6 ] advertise=10M-half,10M-full,100M-half,100M-full,1000M-half,1000M-full comment=ether6 disabled=yes name=wlan5
+set [ find default-name=ether7 ] advertise=10M-half,10M-full,100M-half,100M-full,1000M-half,1000M-full comment="ether7 ;; Erabiltzaileak" name=wlan6
+/interface eoip
+add !keepalive local-address=10.69.16.1 mac-address=02:3C:C7:4F:8A:F5 name=eoip-Talaia_Fibra remote-address=10.69.81.52 tunnel-id=60
+add !keepalive local-address=10.69.16.1 mac-address=02:09:D2:54:9A:B8 name=eoip-Talaia_LAN remote-address=10.69.81.41 tunnel-id=1601
+/routing bgp instance
+set default as=90988 out-filter=ebgp-out redistribute-ospf=yes redistribute-other-bgp=yes router-id=10.69.16.1
+/routing ospf instance
+set [ find default=yes ] redistribute-bgp=as-type-1 redistribute-connected=as-type-1 router-id=10.69.16.1
+/snmp community
+set [ find default=yes ] addresses=0.0.0.0/0
+/tool traffic-generator port
+add interface=bridge_Fibra_Talaia name=Bridge
+/user group
+add name=operator policy=local,telnet,ssh,ftp,reboot,read,write,test,winbox,password,web,sniff,sensitive,api,romon,dude,tikapp,!policy
+/interface bridge port
+add bridge=bridge_EoIP-Talaia_LAN interface=eoip-Talaia_LAN
+add bridge=bridge_Fibra_Talaia hw=no interface=sfp1
+add bridge=bridge_Fibra_Talaia edge=yes interface=eoip-Talaia_Fibra
+add bridge=bridge_EoIP-Talaia_LAN hw=no interface=ether1
+add bridge=Bridge_Erabiltzaileak hw=no interface=wlan6
+add bridge=Bridge_Erabiltzaileak disabled=yes interface=ether10
+/ip address
+add address=10.69.16.1/28 comment=main interface=Lan network=10.69.16.0
+add address=172.23.0.249/29 comment="wds BALIUdaletxea" interface=wlan1 network=172.23.0.248
+add address=172.23.1.1/29 comment="wds TOLOOllaun" interface=wlan2 network=172.23.1.0
+add address=172.23.1.33/29 comment="wds BEASUsurbe" interface=wlan3 network=172.23.1.32
+add address=172.23.4.98/29 comment="wds Urkolamendi" interface=wlan4 network=172.23.4.96
+add address=10.69.16.33/27 comment=ERABILTZAILEAK interface=Bridge_Erabiltzaileak network=10.69.16.32
+add address=172.19.2.9/25 interface=bridge_Fibra_Talaia network=172.19.2.0
+add address=192.168.100.202/24 interface=bridge_EoIP-Talaia_LAN network=192.168.100.0
+add address=192.168.1.101/24 interface=Bridge_Erabiltzaileak network=192.168.1.0
+add address=192.168.99.1/24 comment="Rango temporal la gesti\F3n de los router de fibra mikrotik" interface=bridge_Fibra_Talaia network=192.168.99.0
+add address=10.69.16.98/29 comment="RTR Izarkom" interface=ether9 network=10.69.16.96
+add address=172.23.6.178/29 comment="OSPF Router Talaikide" interface=ether10 network=172.23.6.176
+/ip dns
+set allow-remote-requests=yes servers=8.8.8.8,10.69.34.101
+/ip firewall nat
+add action=src-nat chain=srcnat dst-address=!192.168.0.0/16 src-address=192.168.0.0/16 to-addresses=10.69.16.1
+add action=src-nat chain=srcnat dst-address=!172.16.0.0/16 src-address=172.16.0.0/16 to-addresses=10.69.16.1
+add action=dst-nat chain=dstnat comment=BALIUdaletxea dst-address=10.69.16.3 to-addresses=172.23.0.251
+add action=dst-nat chain=dstnat comment=TOLOOllaun dst-address=10.69.16.4 to-addresses=172.23.1.3
+add action=dst-nat chain=dstnat comment=BEASUsurbe dst-address=10.69.16.5 to-addresses=172.23.1.35
+add action=dst-nat chain=dstnat comment=Urkolamendi dst-address=10.69.16.6 to-addresses=172.23.4.100
+add action=dst-nat chain=dstnat comment=AP2 dst-address=10.69.16.7 log=yes to-addresses=10.69.16.60
+add action=dst-nat chain=dstnat comment=AP1 dst-address=10.69.16.8 to-addresses=10.69.16.61
+add action=dst-nat chain=dstnat comment=OmniTIK dst-address=10.69.16.9 to-addresses=10.69.16.62
+add action=dst-nat chain=dstnat comment=AP3 dst-address=10.69.16.10 to-addresses=10.69.16.59
+add action=dst-nat chain=dstnat dst-port=7443 protocol=tcp to-addresses=192.168.1.19 to-ports=443
+add action=masquerade chain=srcnat dst-address=192.168.1.19
+/ip ssh
+set allow-none-crypto=yes forwarding-enabled=remote
+/lcd interface pages
+set 0 interfaces=sfp1,ether1,wlan1,wlan2,wlan3,wlan4,wlan5,*8,ether8,ether9,ether10
+/routing bgp network
+add network=10.69.16.0/28 synchronize=no
+add network=10.69.16.32/27 synchronize=no
+add network=10.69.16.96/29 synchronize=no
+/routing bgp peer
+add in-filter=ebgp-in name=BALIUdaletxea out-filter=ebgp-out remote-address=172.23.0.250 remote-as=78594 ttl=default
+add in-filter=ebgp-in name=TOLOOllaun out-filter=ebgp-out remote-address=172.23.1.2 remote-as=78521 ttl=default
+add in-filter=ebgp-in name=BEASUsurbe out-filter=ebgp-out remote-address=172.23.1.34 remote-as=91313 ttl=default
+add in-filter=ebgp-in name=Urkolamendi out-filter=ebgp-out remote-address=172.23.4.97 remote-as=91001 ttl=default
+add in-filter=ebgp-in name=ORENUdaletxea out-filter=ebgp-out remote-address=172.23.1.10 remote-as=90990 ttl=default
+/routing filter
+add chain=ebgp-in comment="0. Set ebgp-in preferred source." set-pref-src=10.69.16.1
+add action=discard chain=ebgp-in comment="1. Discard insert non 10.x routes from BGP peer" prefix=!10.0.0.0/8 prefix-length=8-32
+add action=discard chain=ebgp-out comment="2. Discard send non 10.x routes to BGP peer" prefix=!10.0.0.0/8 prefix-length=8-32
+add action=accept chain=ospf-in comment="3. Accept insert 10.x routes from OSPF neighbor" prefix=10.0.0.0/8 prefix-length=8-32 set-pref-src=\
+    10.69.61.17
+add action=accept chain=ospf-in comment="4. Accept insert 172.x routes from OSPF neighbor" prefix=172.16.0.0/12 prefix-length=8-32
+add action=discard chain=ospf-in comment="5. Discard insert non 10.x and 172.x from OSPF neighbor"
+add action=accept chain=ospf-out comment="6. Allow send 10.x routes to OSPF neighbor" prefix=10.0.0.0/8 prefix-length=8-32
+add action=accept chain=ospf-out comment="7. Allow send 172.x routes to OSPF neighbor" prefix=172.16.0.0/12 prefix-length=8-32
+add action=discard chain=ospf-out comment="8. Discard send non 10.x and 172.x to OSPF neighbor"
+/routing ospf interface
+add interface=Lan
+add
+/routing ospf network
+add area=backbone disabled=yes network=10.69.16.0/28
+add area=backbone disabled=yes network=172.23.0.248/29
+add area=backbone disabled=yes network=172.23.1.0/29
+add area=backbone disabled=yes network=172.23.1.32/29
+add area=backbone disabled=yes network=172.23.4.96/29
+add area=backbone disabled=yes network=172.23.1.8/29
+add area=backbone network=10.69.16.32/27
+add area=backbone network=172.23.6.176/29
+/snmp
+set contact=guifi@guifi.net enabled=yes location=ORENKulturetxea
+/system clock
+set time-zone-name=Europe/Madrid
+/system identity
+set name=ORENKulturetxea-RB2011
+/system ntp client
+set enabled=yes primary-ntp=10.69.86.3 secondary-ntp=10.69.34.99
+/tool bandwidth-server
+set authenticate=no
+/tool graphing interface
+add
+/tool traffic-generator
+set test-id=1
+/tool traffic-generator packet-template
+add data=random header-stack=ip interface=bridge_Fibra_Talaia ip-dst=172.19.2.1 ip-protocol=tcp ip-src=172.19.2.5 name=packet-template1
+/tool traffic-generator stream
+add name=str1 packet-size=1500 port=Bridge tx-template=packet-template1
