@@ -174,6 +174,8 @@ Non erosi:
 LC/UPC - SC/APC Kablea                                                  | Prezioa                  | Non Erosi     
 ------------------------------------------------------------------------|--------------------------|---------------
 LC/UPC - SC/APC Kablea                                                  | EUR 1.40                 | https://www.anvimur.com/es/material-fibra-optica/416-latiguillo-lcupc-scapc-3m-o2mm.html
+LC/UPC - SC/APC Kablea                                                  | EUR 2.20                 | https://www.fs.com/es/products/62913.html
+
 
 ## Antena bitartez konektatzeko pausuak
 
