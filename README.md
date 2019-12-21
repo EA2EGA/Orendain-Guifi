@@ -36,6 +36,19 @@ Mikrotik RB2011 routerra                                                | Orenda
 Antenen alimentagailua                                                  | Orendaino herriarena     | ?             | Antenei argi indarra ematen die
 Antenetara konexio panela                                               | Orendaino herriarena     | ?             | Antenetara konexioak era txukun batean jartzen ditu
 
+Operatzaileen aparailuak hemen ikus daitezke, goitik behera:
+
+<img src="media/SFP_Switch.jpg" alt="drawing" width="500"/>
+
+Aparailua                                                               | Norena                   | Arduraduna    | Zertarako    
+------------------------------------------------------------------------|--------------------------|---------------|-------------------------------------------------
+Mikrotik RB2011 routerra                                                | Orendaino herriarena     | ?             | OLTra konektatutako bezeroak, antenen sarea eta interneterako irteerak kudeatzen ditu
+Mikrotik RB3011 routerra                                                | Izarkom-ena              | Izarkom       | Izarkomeko bezeroei Interneteko irteera zerbitzua ematen die
+Zuntz ONT bat                                                           | Izarkom-ena              | Izarkom       | Argazkian falta da,  Movistarren FTTH sare gainean Internetera irteteko
+Mikrotik hEX S routerra                                                 | Talaikide-rena           | Talaikide     | Talaikideko bezeroei Interneteko irteera zerbitzua ematen die
+Zuntz ONT bat                                                           | Talaikide-rena           | Talaikide     | Routerraren ondoan dago, Movistarren FTTH sare gainean Internetera irteteko
+Mikrotik CRS328-4C-20S-4S+RM Switch SFP                                 | Talaikide-rena           | Talaikide     | Talaikideko bezeroei zuntz bitartez zerbitzua ematen die etxeraino
+
 ### Kultur etxeko antenak
 
 Kultur etxe gainean antenak daude kokatuta. Antenak dauden egitura Televes etxearen 360 sistemako mastillekin eginda dago, oinarri bat eta puntera bat erabiliz, punteran tubo bat du sartuta. Bientoekin lotuta dago eta guztira 7 metroko altuera izango du. Antenaren oinarritik 80mm-ko bi tubo jaisten dira rack-a dagoen tokira.
@@ -105,6 +118,18 @@ Switch-a erabiliz zuntz optiko bitartez konektatzeko Orendaingo Guifi.Net sarera
 * Router bat (SFP-ko sarrera badu, medio konbertsorea ez da behar).
 * Bi zuntz optiko monomodoko kabletxo, alde batena LC-SCP konektorea eta bastean SC-APC konektorea dutenak.
 
+Hemen etxe bateko muntaia nola gelditzen den:
+
+<img src="media/SFP_Mikrotik.jpg" alt="drawing" width="500"/>
+
+### SFP Switch-a
+
+Mikrotik CRS328-4C-20S-4S+RM 24 SFP portuko Switch bat da. Kable batez Talaikide-ren Mikrotik hEX S routerrera lotuta dago eta bezeroentzako BiDI moduloak erabiltzen ditu, gaur egun Switchean jarrita dauden denak 1000BASE-BX-D (1490nm-TX/1310nm-RX) erakoak dira eta bezeroen etxeetan 1000BASE-BX-U (1310nm-TX/1490nm-RX) erakoak.
+
+Hemen aparailua:
+
+<img src="media/SFP_gertu.jpg" alt="drawing" width="500"/>
+
 ### SFP-Ethernet konbertsorea
 
 Edozein markako SFP-Ethernet konbertsore erabil liteke. Mekartuko merkeenak honakoak dira:
@@ -112,7 +137,7 @@ Edozein markako SFP-Ethernet konbertsore erabil liteke. Mekartuko merkeenak hona
 Konbertsore modeloa                                                     | Prezioa                  | Non Erosi     
 ------------------------------------------------------------------------|--------------------------|---------------
 FS MMC-GASFP                                                            | EUR 23.00                | www.fs.com    
-Tp-Link MC220L                                                          | EUR 16.92                | maswifi.com    
+Tp-Link MC220L                                                          | EUR 16.92                | www.maswifi.com    
 
 ### SFP-BiDi konbertsoreak
 
