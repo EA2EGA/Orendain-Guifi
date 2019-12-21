@@ -145,8 +145,10 @@ SFP modulutik zuntz optikorako konbertsoreak honakoak dira. Zuntzaren alde bakoi
 
 SFP BiDi konbertsorea                                                   | Prezioa                  | Non Erosi     
 ------------------------------------------------------------------------|--------------------------|---------------
-FS GLC-BX-U                                                             | EUR 8.10                 | www.fs.com    
-FS GLC-BX-D                                                             | EUR 11.00                | www.fs.com  
+FS GLC-BX-U - 1000BASE-BX-D (1490nm-TX/1310nm-RX)                       | EUR 8.10                 | www.fs.com    
+FS GLC-BX-D - 1000BASE-BX-U (1310nm-TX/1490nm-RX)                       | EUR 11.00                | www.fs.com
+TP-Link TL-SM321A - 1000BASE-BX-D (1550nm-TX/1310nm-RX)                 | EUR 30.95                | www.ciudadwireless.com
+TP-Link TL-SM321B - 1000BASE-BX-U (1310nm-TX/1550nm-RX)                 | EUR 16.04                | www.ciudadwireless.com     
 
 ### Routerra
 
