@@ -1,0 +1,77 @@
+XW.v6.1.2# iwlist ath0 scan
+ath0      Scan completed :
+          Cell 01 - Address: 80:2A:A8:B8:29:52
+                    ESSID:"guifi.net-ORENDAIN-AP2"
+                    Mode:Master
+                    Frequency:5.185 GHz (Channel 37)
+                    Quality=45/94  Signal level=-51 dBm  Noise level=-102 dBm
+                    Encryption key:off
+                    Bit Rates:54 Mb/s
+                    Extra:ubnt=0d4f52454e4b756c747572657478650000
+                    Extra:ieee_mode=802.11n
+          Cell 02 - Address: 64:D1:54:64:4A:0F
+                    ESSID:"guifi.net-ORENKulturetxea-AP0"
+                    Mode:Master
+                    Frequency:5.18 GHz (Channel 36)
+                    Quality=36/94  Signal level=-60 dBm  Noise level=-96 dBm
+                    Encryption key:off
+                    Bit Rates:54 Mb/s
+                    Extra:ubnt=0a4f52454e5564616c65747865612d4150
+                    Extra:ieee_mode=802.11n
+
+XW.v6.1.2# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+2: eth0: <BROADCAST,MULTICAST,ALLMULTI,PROMISC,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 80:2a:a8:a7:3c:05 brd ff:ff:ff:ff:ff:ff
+3: eth1: <NO-CARRIER,BROADCAST,MULTICAST,ALLMULTI,PROMISC,UP> mtu 1500 qdisc pfifo_fast state DOWN qlen 1000
+    link/ether 82:2a:a8:a7:3c:05 brd ff:ff:ff:ff:ff:ff
+4: wifi0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 2286 qdisc mq state UNKNOWN qlen 511
+    link/ether 80:2a:a8:a6:3c:05 brd ff:ff:ff:ff:ff:ff
+5: ath0: <BROADCAST,MULTICAST,ALLMULTI,PROMISC,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP 
+    link/ether 80:2a:a8:a6:3c:05 brd ff:ff:ff:ff:ff:ff
+6: br0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN 
+    link/ether 80:2a:a8:a6:3c:05 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.20/24 brd 192.168.1.255 scope global br0
+    inet 169.254.60.5/16 brd 169.254.255.255 scope global br0
+
+
+
+XW.v6.2.0# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+2: eth0: <BROADCAST,MULTICAST,ALLMULTI,PROMISC,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 80:2a:a8:a7:3c:09 brd ff:ff:ff:ff:ff:ff
+3: eth1: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast state DOWN qlen 1000
+    link/ether 82:2a:a8:a7:3c:09 brd ff:ff:ff:ff:ff:ff
+4: wifi0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 2286 qdisc mq state UNKNOWN qlen 511
+    link/ether 80:2a:a8:a6:3c:09 brd ff:ff:ff:ff:ff:ff
+5: ath0: <BROADCAST,MULTICAST,ALLMULTI,PROMISC,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP 
+    link/ether 80:2a:a8:a6:3c:09 brd ff:ff:ff:ff:ff:ff
+6: br0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN 
+    link/ether 80:2a:a8:a6:3c:09 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.19/24 brd 192.168.1.255 scope global br0
+XW.v6.2.0# iwlist ath0 scan
+ath0      Scan completed :
+          Cell 01 - Address: 80:2A:A8:B8:29:52
+                    ESSID:"guifi.net-ORENDAIN-AP2"
+                    Mode:Master
+                    Frequency:5.185 GHz (Channel 37)
+                    Quality=39/94  Signal level=-57 dBm  Noise level=-102 dBm
+                    Encryption key:off
+                    Bit Rates:54 Mb/s
+                    Extra:ubnt=0d4f52454e4b756c747572657478650000
+                    Extra:ieee_mode=802.11n
+          Cell 02 - Address: 64:D1:54:64:4A:0F
+                    ESSID:"guifi.net-ORENKulturetxea-AP0"
+                    Mode:Master
+                    Frequency:5.18 GHz (Channel 36)
+                    Quality=34/94  Signal level=-62 dBm  Noise level=-96 dBm
+                    Encryption key:off
+                    Bit Rates:54 Mb/s
+                    Extra:ubnt=0a4f52454e5564616c65747865612d4150
+                    Extra:ieee_mode=802.11n
+
+
